@@ -1,0 +1,14 @@
+input[type="checkbox"]:checked + label {
+  color: blue;
+}
+
+input[type="checkbox"]:checked {
+}
+
+.checkbox-field:checked {
+  outline: 1px solid blue;
+}
+
+button:disabled {
+  color: grey;
+}

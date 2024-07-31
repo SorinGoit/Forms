@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      action="./about.html"
+      name="contact_form"
+      method="get"
+      autocomplete="on"
+    >
+      <fieldset>
+        <legend>Personal data</legend>
+        <div>
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            value="valoare default"
+            id="name"
+            placeholder="Please enter your name"
+            autofocus
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Please enter your email"
+            />
+          </label>
+        </div>
+        <br />
+        <div>
+          <label>
+            Age
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Please enter the number"
+              required
+              min="20"
+              max="40"
+              value="20"
+              step="0.2"
+            />
+          </label>
+        </div>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Order details</legend>
+        <div>
+          <label>
+            Textarea
+
+            <textarea name="comment" rows="5"> </textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            Select
+
+            <select name="colors" id="">
+              <optgroup label="Culori deschise">
+                <option value="white">White color</option>
+                <option value="blue">Blue color</option>
+                <option value="green">Green color</option>
+
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+              </optgroup>
+              <optgroup label="Culori inchise">
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+                <option value="green">Green color</option>
+              </optgroup>
+            </select>
+          </label>
+        </div>
+        <p>Sizes</p>
+        <div>
+          <label>
+            <input type="radio" name="sizes" value="xs" />
+            XS
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="sizes" value="s" />
+            S
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="sizes" value="m" />
+            M
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="sizes" value="l" />
+            L
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" name="sizes" value="xl" />
+            XL
+          </label>
+        </div>
+
+        <p>Marime pantofi</p>
+        <div>
+          <label>
+            <input type="checkbox" name="marime-pantofi" value="M" checked />
+            M
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="marime-pantofi" value="L" checked />
+            L
+          </label>
+        </div>
+        <div>
+          <input
+            class="checkbox-field"
+            type="checkbox"
+            name="marime-pantofi"
+            value="XL"
+            id="size-xl"
+          />
+          <label for="size-xl">XL </label>
+        </div>
+      </fieldset>
+      <br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

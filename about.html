@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .result-list {
+        font-size: 38px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="result-list"></div>
+    <script>
+      const resultList = document.querySelector(".result-list");
+      new URLSearchParams(window.location.search).forEach((name, value) => {
+        resultList.append(`${value}: ${name}`);
+        resultList.append(document.createElement("br"));
+      });
+    </script>
+  </body>
+</html>
